@@ -5,6 +5,8 @@ namespace MyBanker
     //subclass to the superclass: Card, and interfaces: ICredit and IUseLimit
     public class Mastercard : Card, ICredit, IUseLimet
     {
+    
+    //Hvorfor ligger Random i din sub-klasse
         private Random random = new Random();
         //constructor
         public Mastercard(string name, int age) : base(name, age)
@@ -17,6 +19,7 @@ namespace MyBanker
         //implementet (not written) methode from the interface: ICredit
         public bool Credit()
         {
+        //Hmmmm
             throw new NotImplementedException();
         }
         
